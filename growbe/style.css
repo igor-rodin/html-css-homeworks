@@ -36,6 +36,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
@@ -44,24 +45,39 @@ a {
 }
 
 img {
-    height: 100%;
+    display: block;
+    max-width: 100%;
 }
 
 body {
     font-family: Gilroy, Arial, Helvetica, sans-serif;
     font-weight: normal;
+    padding-top: 39px;
 }
 
-.wrapper {
-    padding-top: 39px;
+.center {
+    max-width: 1170px;
+    margin: 0 auto;
 }
 
 .header {
     margin-bottom: 85px;
 }
 
+.header-contenet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo {
     width: 144px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
 }
 
 .menu__link {
@@ -84,7 +100,14 @@ body {
 }
 
 .main-content {
-    width: 522px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.main-content__left {
+    max-width: 522px;
 }
 
 .title {
@@ -100,10 +123,14 @@ body {
     font-weight: 500;
     font-size: 20px;
     color: #888;
+    width: 467px;
+    ;
 }
 
 .main-content__buttons {
     margin-top: 37px;
+    display: flex;
+    gap: 35px;
 }
 
 .button {
@@ -130,14 +157,19 @@ body {
     box-shadow: 4px 4px 8px rgba(242, 88, 43, 0.2);
 }
 
-.main__image {
-    width: 545px;
+.main-content__image {
+    max-width: 546px;
 }
 
 .brand {
     padding-top: 97px;
     padding-bottom: 95px;
     margin-top: 162px;
+}
+
+.brand-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 .brand-image {
