@@ -155,12 +155,23 @@ body {
 
 .offers-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 360px);
+    grid-template-columns: repeat(auto-fit, minmax(263px, 1fr));
     grid-auto-rows: auto;
     gap: 30px;
 }
 
+.offer__image {
+    flex: 1;
+    object-fit: cover;
+}
+
 .offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
     position: relative;
     text-transform: uppercase;
     color: #fff;
@@ -304,5 +315,24 @@ body {
 
     .title__down {
         font-size: 24px;
+    }
+
+    .offers {
+        padding-bottom: 110px;
+    }
+
+    .offers-content {
+        grid-template-columns: repeat(auto-fit, 232px);
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .offer_big>.title-wrapper {
+        padding: 33px 0;
+    }
+
+    .title-wrapper {
+        padding-top: 57px;
+        padding-bottom: 57px;
     }
 }
