@@ -111,7 +111,7 @@ body {
     padding-top: 290px;
     padding-bottom: 381px;
     padding-left: 55%;
-    ;
+    line-height: 1.2;
 }
 
 .hero-content__image {
@@ -132,6 +132,7 @@ body {
 }
 
 .title__upper {
+    display: block;
     font-size: 48px;
     font-weight: 900;
     color: #222222;
@@ -280,5 +281,28 @@ body {
     .header-content {
         padding-left: 32px;
         padding-right: 32px;
+    }
+
+    .hero-content {
+        padding: 0 34px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 39px;
+    }
+
+    .hero-content__image {
+        position: relative;
+        left: 0;
+        width: 386px;
+    }
+
+    .title__upper {
+
+        font-size: 44px;
+    }
+
+    .title__down {
+        font-size: 24px;
     }
 }
