@@ -61,13 +61,24 @@ body {
     height: 27px;
     background-image: url(./img/search.svg);
     background-repeat: no-repeat;
+
+}
+
+.header-button_menu {
+    width: 32px;
+    height: 23px;
+    background-image: url(./img/hamburger.svg);
+    background-repeat: no-repeat;
+}
+
+.header-button_user {
+    width: 29px;
+    height: 29px;
 }
 
 .header-button_bucket {
     width: 32px;
     height: 29px;
-    background-image: url(./img/backet.svg);
-    background-repeat: no-repeat;
 }
 
 .hero {
@@ -91,7 +102,6 @@ body {
 
 .title {
     text-transform: uppercase;
-    /* width: 405px; */
     line-height: 1.2;
 }
 
@@ -107,6 +117,7 @@ body {
 }
 
 .title__down {
+    display: inline-block;
     font-size: 32px;
     font-weight: 700;
 }
@@ -122,7 +133,8 @@ body {
 
 .offers-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, 360px);
+    grid-auto-rows: auto;
     gap: 30px;
 }
 
@@ -188,7 +200,8 @@ body {
 
 .catalog {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, 360px);
+    grid-auto-rows: auto;
     column-gap: 30px;
     row-gap: 25px;
     margin-bottom: 48px;
