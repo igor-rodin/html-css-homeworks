@@ -15,7 +15,7 @@ a {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: Lato, sans-serif;
     color: #222222;
 }
 
@@ -231,19 +231,27 @@ body {
     margin-bottom: 54px;
 }
 
+.products__catalog {
+    margin-bottom: 48px;
+}
+
 .catalog {
     display: grid;
     grid-template-columns: repeat(auto-fit, 360px);
     grid-auto-rows: auto;
+    justify-content: center;
     column-gap: 30px;
     row-gap: 25px;
-    margin-bottom: 48px;
 }
 
 .product {
     background-color: #F8F8F8;
     text-align: left;
     padding-bottom: 24px;
+}
+
+.product__image-wrapper {
+    position: relative;
 }
 
 .product__img {
@@ -277,12 +285,47 @@ body {
     padding-right: 29px;
 }
 
+.product-to-cart {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(58, 56, 56, 0.86);
+    cursor: pointer;
+}
+
+.product-to-cart__button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 13px 16px 12px 50px;
+    background: url(./img/add_to_cart.svg) no-repeat 12px center;
+    cursor: inherit;
+}
+
+.product_active>.product__image-wrapper>.product-to-cart {
+    display: flex;
+}
+
+.product:hover>.product__image-wrapper>.product-to-cart {
+    display: flex;
+}
+
 .poducts__button {
     border: 1px solid #FF6A6A;
     background-color: #fff;
     padding: 15px 39px;
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.2;
     color: #F26376;
     text-transform: capitalize;
     cursor: pointer;
@@ -334,5 +377,30 @@ body {
     .title-wrapper {
         padding-top: 57px;
         padding-bottom: 57px;
+    }
+
+    .catalog {
+        gap: 16px;
+    }
+
+    .product {
+        margin-bottom: 20px;
+    }
+
+    .products__text {
+        margin-bottom: 74px;
+    }
+
+
+    .product__title {
+        margin-bottom: 13px;
+    }
+
+    .product__text {
+        margin-bottom: 18px;
+    }
+
+    .products__catalog {
+        margin-bottom: 32px;
     }
 }
