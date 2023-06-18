@@ -423,7 +423,6 @@ body {
 }
 
 .feature__image>img {
-    /* max-width: 100%; */
     flex: 0 0 content;
 }
 
@@ -448,6 +447,7 @@ body {
 .feature__text {
     font-weight: 300;
     font-size: 14px;
+    max-width: 316px;
 }
 
 .subscribe {
@@ -457,7 +457,6 @@ body {
     background-size: cover;
     padding-top: 97px;
     padding-bottom: 126px;
-    height: 448px;
 }
 
 .subscribe-content {
@@ -475,6 +474,10 @@ body {
     font-weight: 400;
     color: #222224;
     flex-basis: 360px;
+}
+
+.subscribe-info__text {
+    padding-bottom: 26px;
 }
 
 .subscribe-info__image {
@@ -647,6 +650,52 @@ body {
 
     .products__catalog {
         margin-bottom: 32px;
+    }
+
+    .features {
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    .features-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .subscribe {
+        padding-top: 64px;
+        padding-bottom: 140px;
+        background-position-x: 25%;
+    }
+
+    .subscribe-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 48px;
+    }
+
+    .subscribe-info {
+        flex-basis: auto;
+    }
+
+    .subscribe-info__text {
+        max-width: 390px;
+        padding-bottom: 29px;
+    }
+
+    .subscribe-form {
+        flex-basis: auto;
+    }
+
+    .subscribe-form__title {
+        margin-bottom: 27px;
+    }
+
+    .footer-content {
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
