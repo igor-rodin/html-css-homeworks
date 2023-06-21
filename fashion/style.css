@@ -451,7 +451,7 @@ body {
 }
 
 .subscribe {
-    background-image: linear-gradient(to right, rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(./img/bg_subscribe.jpg);
+    background-image: linear-gradient(to right, rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(./img/bg_subscribe.webp);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: cover;
